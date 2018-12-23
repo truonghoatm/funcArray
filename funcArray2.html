@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num =parseInt(prompt("Enter the string:"));
+    var a = num.toString();/*chuyen mot so, mot mang thanh kieu chuoi*/
+    var result = [a[0]];
+    for (var i =1; i < a.length; i++) {
+        if ((a[i-1]%2 === 0) && (a[i] %2 === 0)) {
+            result.push('-', a[i]);
+
+        }else {
+            result.push(a[i]);
+        }
+    }
+   // document.write(result)
+   document.write(result.join(''));/*noi cac phan tu mang thanh mot chuoi*/
+
+</script>
+</body>
+</html>
